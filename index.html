@@ -1,0 +1,318 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Рёбра Крафт – рёбра BBQ, крафт и настойки на Ошарской</title>
+<meta name="description" content="Гастробар «Рёбра Крафт» в Нижнем Новгороде с 2017 года: свиные и мраморные говяжьи рёбра в авторских глазировках, 36 сортов крафта, настойки и бургеры. Ошарская, 9. +7 (980) 114-57-69">
+<meta name="theme-color" content="#2a1a10">
+<meta property="og:title" content="Рёбра Крафт – бар на Ошарской">
+<meta property="og:description" content="Рёбра в семи глазировках, крафт и настойки. Нижний Новгород, Ошарская, 9">
+<meta property="og:image" content="img/ribs-hero.webp">
+<meta property="og:type" content="website">
+<link rel="icon" type="image/png" href="img/favicon.png">
+<link rel="apple-touch-icon" href="img/favicon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;700&family=Caveat:wght@600;700&family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+<script>
+  document.documentElement.className += ' js';
+  try { if (localStorage.getItem('rebra-age') === 'yes') document.documentElement.className += ' age-ok'; } catch (e) {}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BarOrPub",
+  "name": "Рёбра Крафт",
+  "servesCuisine": ["Американская", "Барбекю"],
+  "telephone": "+79801145769",
+  "address": {"@type": "PostalAddress", "streetAddress": "Ошарская улица, 9", "addressLocality": "Нижний Новгород", "postalCode": "603006", "addressCountry": "RU"},
+  "geo": {"@type": "GeoCoordinates", "latitude": 56.321693, "longitude": 44.008295},
+  "openingHours": ["Mo-Th 12:00-00:00", "Fr-Sa 12:00-02:00", "Su 12:00-00:00"],
+  "aggregateRating": {"@type": "AggregateRating", "ratingValue": "5.0", "ratingCount": "2049"}
+}
+</script>
+</head>
+<body>
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <filter id="rough"><feTurbulence type="fractalNoise" baseFrequency=".04" numOctaves="2" seed="3"/><feDisplacementMap in="SourceGraphic" scale="3"/></filter>
+</svg>
+
+<div class="age" id="age" role="dialog" aria-modal="true" aria-labelledby="ageTitle">
+  <div class="age__box">
+    <img src="img/logo.svg" alt="Бар Рёбра Крафт" class="age__logo" width="946" height="1044">
+    <div id="ageAsk">
+      <p class="age__title" id="ageTitle">Вам уже есть 18?</p>
+      <p class="age__text">У&nbsp;нас бар: крафт, настойки и&nbsp;коктейли. Поэтому сайт только для взрослых гостей.</p>
+      <div class="age__btns">
+        <button type="button" class="btn btn--red" id="ageYes">Да, мне есть 18</button>
+        <button type="button" class="btn btn--line" id="ageNo">Нет</button>
+      </div>
+    </div>
+    <div id="ageDeny" hidden>
+      <p class="age__title">Ждём вас позже</p>
+      <p class="age__text">К&nbsp;сожалению, сайт доступен только совершеннолетним.</p>
+    </div>
+  </div>
+</div>
+
+<header class="top">
+  <div class="top__in">
+    <a href="#top" class="top__logo" aria-label="Рёбра Крафт"><img src="img/logo.svg" alt="" width="58" height="64"></a>
+    <nav class="nav" id="nav" aria-label="Разделы">
+      <a href="#glaze">Рёбра</a>
+      <a href="#menu">Меню</a>
+      <a href="#bar">Крафт и&nbsp;настойки</a>
+      <a href="#hall">Зал</a>
+      <a href="#reviews">Отзывы</a>
+      <a href="#contacts">Как найти</a>
+      <a href="tel:+79801145769" class="nav__phone">+7 (980) 114-57-69</a>
+    </nav>
+    <a href="https://yandex.ru/maps/-/CPxiYIZ4" target="_blank" rel="noopener" class="btn btn--red btn--sm top__cta">Забронировать</a>
+    <button class="burger" id="burger" aria-label="Меню навигации" aria-expanded="false" aria-controls="nav"><span></span><span></span></button>
+  </div>
+</header>
+
+<main id="top">
+
+<!-- HERO: крафтовая бумага, как их меню -->
+<section class="hero">
+  <div class="wrap hero__grid">
+    <div class="hero__text">
+      <p class="note" id="note" aria-live="polite"><span id="noteText">Ошарская, 9</span></p>
+      <img class="hero__logo" src="img/logo.svg" alt="Бар Рёбра Крафт, основан в 2017" width="946" height="1044">
+      <h1 class="hero__title">Рёбра, от&nbsp;которых <span>мясо само отходит от&nbsp;косточки</span></h1>
+      <p class="hero__lead">Свиные и&nbsp;мраморные говяжьи рёбра в&nbsp;семи глазировках, 36 сортов крафта и&nbsp;домашние настойки. Гастробар в&nbsp;сердце Нижнего с&nbsp;2017 года.</p>
+      <div class="hero__actions">
+        <a href="https://yandex.ru/maps/-/CPxiYIZ4" target="_blank" rel="noopener" class="btn btn--red">Забронировать стол</a>
+        <a href="#menu" class="btn btn--line">Открыть меню</a>
+      </div>
+      <a class="hero__rating" href="https://yandex.ru/maps/org/ryobra_kraft/59408520909/reviews/" target="_blank" rel="noopener"><b>5,0</b><span>2049 оценок<br>на&nbsp;Яндекс Картах</span></a>
+    </div>
+    <div class="hero__pic">
+      <figure class="photo photo--main"><img src="img/ribs-hero.webp" alt="Рёбра BBQ на деревянной доске с коул слоу и огурчиками" fetchpriority="high"></figure>
+      <figure class="photo photo--small"><img src="img/beer-flight.webp" alt="Сет крафтового пива на дегустационной доске"></figure>
+      <span class="scribble scribble--top">Top!</span>
+      <span class="scribble scribble--arrow" aria-hidden="true">
+        <svg viewBox="0 0 120 60"><path d="M4 50C30 20 70 8 112 14M112 14l-14-8M112 14l-10 12" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"/></svg>
+      </span>
+    </div>
+  </div>
+</section>
+
+<!-- FACTS -->
+<section class="facts">
+  <div class="wrap facts__in">
+    <p><b>2017</b>год основания</p>
+    <p><b>7</b>глазировок рёбер</p>
+    <p><b>36</b>сортов пива и&nbsp;сидра</p>
+    <p><b>12</b>домашних настоек</p>
+  </div>
+</section>
+
+<!-- GLAZE PICKER -->
+<section class="glaze" id="glaze">
+  <div class="wrap">
+    <div class="head reveal">
+      <p class="kicker">Главное блюдо</p>
+      <h2 class="h2">Выбери <span class="hand">свою глазировку</span></h2>
+      <p class="lead">Свиные рёбра в&nbsp;авторских глазировках и&nbsp;мраморные говяжьи. Порция L на&nbsp;одного, XXL на&nbsp;двоих.</p>
+    </div>
+    <div class="glaze__box">
+      <div class="glaze__list" role="tablist" aria-label="Глазировки" id="glazeList"></div>
+      <div class="glaze__card" id="glazeCard" aria-live="polite"></div>
+    </div>
+  </div>
+</section>
+
+<!-- SETS -->
+<section class="sets">
+  <div class="wrap">
+    <div class="head head--light reveal">
+      <p class="kicker kicker--light">Для компании</p>
+      <h2 class="h2">Мама, <span class="hand">я с друзьями</span></h2>
+    </div>
+    <div class="sets__grid">
+      <article class="set reveal">
+        <img src="img/ribs-set.webp" alt="Рёбра XXL на двоих с коул слоу" loading="lazy">
+        <div class="set__body">
+          <h3>Рёбра XXL BBQ</h3>
+          <p>Большая порция на&nbsp;двоих: рёбра, картофель, коул слоу и&nbsp;фирменные огурчики.</p>
+          <p class="set__price"><b>1&#8239;790&nbsp;₽</b><span>910 г</span></p>
+        </div>
+      </article>
+      <article class="set set--hot reveal">
+        <span class="set__tag">new</span>
+        <img src="img/tacos.webp" alt="Тако, начос и закуски на столе" loading="lazy">
+        <div class="set__body">
+          <h3>Неприлично огромный сет</h3>
+          <p>Гренки и&nbsp;байтсы, крылья чипотле, начос, бастурма, батат фри, охотничьи колбаски, коул слоу, огурчики и&nbsp;соусы.</p>
+          <p class="set__price"><b>3&#8239;700&nbsp;₽</b></p>
+        </div>
+      </article>
+      <article class="set reveal">
+        <span class="set__tag">new</span>
+        <img src="img/ribs-two.webp" alt="Две доски со свиными рёбрами" loading="lazy">
+        <div class="set__body">
+          <h3>XXXXL рёбра</h3>
+          <p>Свиные рёбра, картофельные крокеты, чипсы из&nbsp;бекона, коул слоу, огурчики и&nbsp;три глазировки на&nbsp;выбор.</p>
+          <p class="set__price"><b>4&#8239;100&nbsp;₽</b><span>1700 г</span></p>
+        </div>
+      </article>
+    </div>
+    <p class="lunch reveal"><span class="hand">Бизнес-ланч</span> по&nbsp;будням: суп, салат, горячее и&nbsp;напиток <b>от&nbsp;340&nbsp;₽</b></p>
+  </div>
+</section>
+
+<!-- MENU -->
+<section class="menu" id="menu">
+  <div class="wrap">
+    <div class="head reveal">
+      <p class="kicker">Меню</p>
+      <h2 class="h2">Всё, что <span class="hand">мы готовим и&nbsp;наливаем</span></h2>
+    </div>
+    <div class="tabs" role="tablist" aria-label="Разделы меню">
+      <button role="tab" class="tab is-active" aria-selected="true" data-tab="food">Кухня</button>
+      <button role="tab" class="tab" aria-selected="false" data-tab="beer">Крафт</button>
+      <button role="tab" class="tab" aria-selected="false" data-tab="shots">Настойки и&nbsp;крепкое</button>
+      <button role="tab" class="tab" aria-selected="false" data-tab="cocktails">Коктейли, чай, кофе</button>
+    </div>
+    <div class="menu__body" id="menuBody" aria-live="polite"></div>
+    <p class="menu__note"><span class="hand">Очень важно:</span> расскажите официанту, если у&nbsp;вас аллергия или вы не&nbsp;едите какие-то продукты. А&nbsp;про гостевую бутылку крафта спросите отдельно: она каждый раз новая.</p>
+  </div>
+</section>
+
+<!-- BAR -->
+<section class="bar" id="bar">
+  <div class="wrap bar__grid">
+    <div class="bar__pics">
+      <figure class="photo reveal"><img src="img/shots.webp" alt="Сет настоек на деревянной доске" loading="lazy"></figure>
+      <figure class="photo reveal"><img src="img/cheers.webp" alt="Четыре бокала крафтового пива" loading="lazy"></figure>
+    </div>
+    <div class="bar__text reveal">
+      <p class="kicker">Бар</p>
+      <h2 class="h2">Настойки: <span class="hand">сладко, кисленько, земляные</span></h2>
+      <p class="lead">Двенадцать домашних настоек от&nbsp;ириски до&nbsp;хреновухи. Не&nbsp;знаете, что выбрать? Берите сет и&nbsp;пробуйте сразу несколько.</p>
+      <ul class="shotsets">
+        <li><b>Привет!</b><span>6&nbsp;шт по&nbsp;20&nbsp;мл, 3&nbsp;вкуса</span><i>730&nbsp;₽</i></li>
+        <li class="is-top"><b>Продолжаем!</b><span>6&nbsp;шт по&nbsp;40&nbsp;мл, 3&nbsp;вкуса</span><i>1&#8239;310&nbsp;₽</i></li>
+        <li><b>Пока(((</b><span>20&nbsp;шт по&nbsp;40&nbsp;мл, 5&nbsp;вкусов</span><i>3&#8239;910&nbsp;₽</i></li>
+      </ul>
+      <p class="bar__beer">А&nbsp;ещё ИПА, сауэры, стауты, гозе и&nbsp;медовухи от&nbsp;4Brewers, Brewlok, Plan-B и&nbsp;Revort. Пиво от&nbsp;410&nbsp;₽.</p>
+    </div>
+  </div>
+</section>
+
+<!-- HALL -->
+<section class="hall" id="hall">
+  <div class="wrap">
+    <div class="head reveal">
+      <p class="kicker">Зал</p>
+      <h2 class="h2">Кирпич, дерево <span class="hand">и&nbsp;мотоцикл на&nbsp;стене</span></h2>
+    </div>
+    <div class="hall__grid">
+      <figure class="hp hp--a reveal"><img src="img/moto-hall.webp" alt="Зал с красным мотоциклом на кирпичной стене" loading="lazy"></figure>
+      <figure class="hp hp--b reveal"><img src="img/bar-counter.webp" alt="Барная стойка" loading="lazy"></figure>
+      <figure class="hp hp--c reveal"><img src="img/hall.webp" alt="Зал с кирпичными стенами и большими окнами" loading="lazy"></figure>
+      <figure class="hp hp--d reveal"><img src="img/party.webp" alt="Большая компания празднует в баре" loading="lazy"></figure>
+    </div>
+    <ul class="perks">
+      <li class="reveal"><b>Праздники</b>дни рождения, корпоративы и&nbsp;банкеты</li>
+      <li class="reveal"><b>Трансляции</b>проектор и&nbsp;спорт на&nbsp;экранах</li>
+      <li class="reveal"><b>Можно с&nbsp;собакой</b>и&nbsp;с&nbsp;ноутбуком</li>
+      <li class="reveal"><b>Летняя веранда</b>и&nbsp;бесплатная парковка</li>
+    </ul>
+  </div>
+</section>
+
+<!-- REVIEWS -->
+<section class="reviews" id="reviews">
+  <div class="wrap">
+    <div class="head head--row reveal">
+      <div>
+        <p class="kicker">Отзывы</p>
+        <h2 class="h2">1154 отзыва <span class="hand">и&nbsp;средняя 5,0</span></h2>
+      </div>
+      <a class="more" href="https://yandex.ru/maps/org/ryobra_kraft/59408520909/reviews/" target="_blank" rel="noopener">Все отзывы на&nbsp;Яндекс Картах&nbsp;→</a>
+    </div>
+    <div class="quotes">
+      <figure class="q reveal">
+        <blockquote>Праздновали день рождения. Потрясающие нежнейшие рёбра, мясо отходит от&nbsp;косточки. Подача быстрая, разнообразные вкусные настойки и&nbsp;коктейли.</blockquote>
+        <figcaption>Гость · Яндекс Карты · 26 июня</figcaption>
+      </figure>
+      <figure class="q reveal">
+        <blockquote>Взяли попробовать острые рёбра сковилл, это что-то с&nbsp;чем-то! Как челлендж с&nbsp;друзьями самое то. Быстрые подачи и&nbsp;вкусный крафт.</blockquote>
+        <figcaption>Гость · Яндекс Карты · 4 сентября</figcaption>
+      </figure>
+      <figure class="q reveal">
+        <blockquote>Бываем часто. Бизнес-ланч вкусный и&nbsp;сытный, вечерами шумно и&nbsp;весело. А&nbsp;чизкейк просто бомба.</blockquote>
+        <figcaption>Гость · Яндекс Карты · 22 сентября</figcaption>
+      </figure>
+      <figure class="q reveal">
+        <blockquote>Официанты всё объясняют и&nbsp;подсказывают, цены адекватные. Настойки весьма достойные, не&nbsp;спиртуозные. Уборная – отдельный вид искусства.</blockquote>
+        <figcaption>Гость · Яндекс Карты · 14 июня</figcaption>
+      </figure>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACTS -->
+<section class="contacts" id="contacts">
+  <div class="wrap contacts__grid">
+    <div class="reveal">
+      <p class="kicker">Как найти</p>
+      <h2 class="h2">Ошарская, 9 <span class="hand">вход с&nbsp;Ошарской</span></h2>
+      <dl class="info">
+        <div><dt>Адрес</dt><dd>Нижний Новгород, Ошарская ул., 9<span class="sub">остановки «Чёрный пруд» и&nbsp;«Варварская улица», 280&nbsp;м</span></dd></div>
+        <div><dt>Бронь</dt><dd><a href="tel:+79801145769">+7 (980) 114-57-69</a><span class="sub">или онлайн через Яндекс Карты</span></dd></div>
+        <div><dt>Соцсети</dt><dd><a href="https://t.me/rebracraft" target="_blank" rel="noopener">Telegram</a> · <a href="https://vk.ru/rebracraft" target="_blank" rel="noopener">ВКонтакте</a></dd></div>
+      </dl>
+      <ul class="week" id="week" aria-label="Часы работы"></ul>
+      <div class="contacts__btns">
+        <a href="https://yandex.ru/maps/-/CPxiYIZ4" target="_blank" rel="noopener" class="btn btn--red">Забронировать</a>
+        <a href="tel:+79801145769" class="btn btn--line">Позвонить</a>
+        <a href="https://yandex.ru/maps/org/ryobra_kraft/59408520909/" target="_blank" rel="noopener" class="btn btn--line">Маршрут</a>
+      </div>
+    </div>
+    <div class="contacts__side reveal">
+      <figure class="night">
+        <img src="img/night.webp" alt="Вечерняя вывеска Рёбра Крафт с гирляндами над входом" loading="lazy">
+        <figcaption><span class="hand">Ищите</span> светящуюся вывеску и&nbsp;гирлянды над&nbsp;входом</figcaption>
+      </figure>
+      <div class="map">
+        <iframe title="Рёбра Крафт на Яндекс Картах" src="https://yandex.ru/map-widget/v1/?ll=44.008295%2C56.321693&z=16&pt=44.008295%2C56.321693%2Cpm2brm" loading="lazy" allowfullscreen></iframe>
+      </div>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer class="footer">
+  <div class="wrap footer__in">
+    <img src="img/logo-light.svg" alt="Бар Рёбра Крафт" class="footer__logo" width="946" height="1044" loading="lazy">
+    <p class="footer__thanks">«Мы&nbsp;не&nbsp;идеальны, но&nbsp;всегда стремимся к&nbsp;этому. Обнимаем крепко и&nbsp;ждём за&nbsp;столиком или у&nbsp;барной стойки».<span class="hand">Всегда ваши, Рёбра Крафт</span></p>
+    <div class="footer__meta">
+      <a href="tel:+79801145769">+7 (980) 114-57-69</a>
+      <span>Ошарская, 9 · Нижний Новгород</span>
+      <span><a href="https://t.me/rebracraft" target="_blank" rel="noopener">Telegram</a> · <a href="https://vk.ru/rebracraft" target="_blank" rel="noopener">ВК</a></span>
+    </div>
+  </div>
+  <div class="wrap footer__legal">
+    <span>© Рёбра Крафт, с 2017</span>
+    <span>18+ · Информация на&nbsp;сайте носит справочный характер и&nbsp;не&nbsp;является публичной офертой. Чрезмерное употребление алкоголя вредит вашему здоровью.</span>
+  </div>
+</footer>
+
+<div class="dock" aria-label="Быстрые действия">
+  <a href="https://yandex.ru/maps/-/CPxiYIZ4" target="_blank" rel="noopener">Бронь</a>
+  <a href="#menu">Меню</a>
+  <a href="tel:+79801145769">Позвонить</a>
+</div>
+
+<script src="menu.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
